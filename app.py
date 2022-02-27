@@ -17,6 +17,7 @@ import joblib
 import pandas as pd
 
 df = pd.read_csv("Credit Card Default II (balance).csv")
+df.age = abs(df.age)
 
 # create scaler
 from sklearn.preprocessing import StandardScaler
